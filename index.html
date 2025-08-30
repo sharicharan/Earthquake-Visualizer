@@ -173,7 +173,8 @@
     // Fetch earthquake data
     async function loadEarthquakes() {
       try {
-        const url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=30";
+        const url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson";
+        
         const res = await fetch(url);
         const data = await res.json();
 
